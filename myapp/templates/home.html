@@ -1,0 +1,29 @@
+<!doctype>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='home-page.css') }}"> <!--"../static/home-page.css"-->
+		<script type="text/javascript" src="{{ url_for('static', filename='home-page.js') }} "></script>
+
+	</head>
+	<body>
+		<div class="login-page">
+		  <div class="form">
+			<form class="register-form">
+			  <input type="text" placeholder="name"/>
+			  <input type="password" placeholder="password"/>
+			  <input type="text" placeholder="email address"/>
+			  <button>create</button>
+			  <p class="message">Already registered? <a href="#">Sign In</a></p>
+			</form>
+			<form class="login-form" action="/home" method="post"> <!--write the URL that handles the action for this form and method -->
+			  <input type="text" placeholder="username" name="username"required autocomplete="off"/>
+			  <input type="password" placeholder="password" name="password"required autocomplete="off"/>
+			  <button>login</button>
+			  <p class="message">Not registered? <a href="#">Create an account</a></p>
+			</form>
+		  </div>
+		</div>
+	</body>
+</html>
+
+

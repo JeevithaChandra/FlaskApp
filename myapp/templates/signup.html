@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title> Welcome. Please SignUp </title>
+		
+	</head>
+	<body>
+		<div class= "container"> 
+			<form action="" method="post">
+				<label><b>Username :</b></label>
+				<input type="text" placeholder="Enter Username"  name="uname" value="{{request.form.uname}}" required>
+				<br></br>
+				<label><b>Password :</b></label>
+				<input type="password" placeholder="Enter Password"  name="pswd" value="{{request.form.pswd}}" required>
+				<br></br>
+				<input class="button" type="submit" value="Signup">
+			</form>
+		</div>			
+	</body>
+</html>
